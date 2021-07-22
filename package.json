@@ -8,7 +8,6 @@
     "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.source.css -o public/tailwind.build.css",
     "watch:rollup": "rollup -c -w",
     "watch:tailwind": "postcss public/tailwind.source.css -o public/tailwind.build.css -w",
-    "dev": "run-p watch:tailwind watch:rollup",
     "build": "run-p watch:tailwind watch:rollup",
     "prod": "yarn run build:tailwind && yarn run build:rollup",
     "start": "sirv public --no-clear"
